@@ -1,10 +1,11 @@
 
-function myButton() {
+function startPage() {
     return "Hello world!"
 }
 
-alert(myButton());
+// alert(startPage());
 
 
-
-console.log("FAK")
+function onClick() {
+    alert("KNAPP!")
+}

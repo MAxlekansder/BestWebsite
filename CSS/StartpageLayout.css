@@ -1,0 +1,34 @@
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    /* display: flex; */
+    align-items: center;
+    justify-content: left;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+
+header {
+    margin-left: 100px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.flex-container nav {
+    font-family: 'Roboto', sans-serif;
+    flex: auto;
+    /* display: inline-flex; */
+    flex-wrap: wrap;
+    margin-left: 100px;
+    flex-direction: row;
+    justify-content:flex-start;
+    cursor: pointer;
+}
