@@ -1,20 +1,47 @@
 .header {
     position: sticky;
     position: -webkit-sticky;
-    /* display: flex; */
     align-items: center;
     justify-content: left;
-
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", "Roboto-Regular", Helvetica, Arial, sans-serif;
     font-size: 50px;
 }
 
 
 header {
-    margin-left: 250px;
+    margin-left: 150px;
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.input-group {
+    position: relative;
+    /* display: flex; */
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+ 
 }
 
 .flex-container {
@@ -22,27 +49,28 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid rgb(0, 110, 255);
-    padding: -10px 0;
-
+    border-bottom: 1px solid;
+    border-color: black;
+    /* padding: -10px 0; */
 }
 
 .flex-container nav {
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-family:  "Roboto", "Roboto-Regular", Helvetica, Arial, sans-serif;
     flex: auto;
     /* display: inline-flex; */
     flex-wrap: wrap;
-    margin-left: 300px;
+    margin-left: 200px;
     margin-top: 10px;
     flex-direction: row;
     justify-content: flex-start;
     cursor: pointer;
+    /* margin: 0%; */
 }
 
 .flex-container nav2 {
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-family:  "Roboto", "Roboto-Regular", Helvetica, Arial, sans-serif;
     flex: auto;
     /* display: inline-flex; */
     flex-wrap: wrap;
@@ -64,13 +92,14 @@ header {
 .box {
     text-align: center;
     line-height: 300px;
-    border-radius: 20px;
+    /* border-radius: 10px; */
     width: 400px;
-    height: 300px;
+    height: 400px;
     background-color: #3498db;
-    margin: 10px;
+    margin: 2px;
     justify-content: center;
     flex-direction: row;
     display: inline-block;
+    border: 1px;
 
 }
