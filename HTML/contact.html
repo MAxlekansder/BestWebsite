@@ -1,96 +1,99 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="sv">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Webbutik Projekt</title>
-        <link rel="stylesheet" href="../CSS/StartpageLayout.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutik Projekt</title>
+    <link rel="stylesheet" href="../CSS/style_contact.css">
+    <script src="../JS/style_contact.js" defer></script>
+</head>
 
-    </head>
-
-    <body>
-        <!-- Header Section -->
-        <header>
-            <h1>Webbutik gemenstamt Projekt</h1>
-            <!-- Navigation Menu -->
-            <nav>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Webbutik gemenstamt Projekt</h1>
+        <!-- Navigation Menu -->
+        <nav>
             <ul>
                 <li><a href="Startpage.html">Hem</a></li>
                 <li><a href="products.html">Produkter</a></li>
                 <li><a href="about.html">Om oss</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
-            </nav>
-        </header>
+        </nav>
+    </header>
 
-        <!-- Main Content Section -->
-        <main>
+    <!-- Main Content Section -->
+    <main>
         <!-- Contact Information Section -->
         <section id="call-me">
             <h2>Kontakta Oss</h2>
-            <p>Välkommen att kontakta oss om du har frågor eller behöver hjälp.</p>      
+            <p>Välkommen att kontakta oss om du har frågor eller behöver hjälp.</p>
 
             <!-- Telephone Link -->
             <h3>Telefonnummer: <a href="tel:+46701234567">070-123 45 67</a></h3>
-            
+
             <!-- Email Link -->
             <h3>E-postadress: <a href="mailto:info@example.com">info@example.com</a></h3>
         </section>
 
         <!-- Contact Form Section -->
-        <form action="#" method="post">
+        <form action="#" method="post" onsubmit="return validateForm()">
             <fieldset style="width: 500px">
-            <legend><strong> Kontaktformulär </strong></legend>
+                <legend><strong> Kontaktformulär </strong></legend>
 
-            <!-- Name Input -->
-            <label for="name">Namn:</label>
-            <input type="text" id="name" name="name" placeholder="Namn" required>
+                <!-- Name Input -->
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" placeholder="Namn" required>
 
-            <br><br>
+                <br><br>
 
-            <!-- Email Input -->
-            <label for="email">E-post:</label>
-            <input type="email" id="email" name="email" placeholder="E-post" required>
-            
-            <br><br>
+                <!-- Email Input -->
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" placeholder="E-post" required>
 
-            <!-- Phone Input -->
-            <label for="phone">Telefon:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Telefon" required>
-            
-            <br><br>
-            
-            <!-- Customer Type Radio Buttons -->
-            <label>Är du:</label>
-            <input type="radio" id="newCustomer" name="customerType" value="new">
-            <label for="newCustomer">Blivande kund</label>
-            <input type="radio" id="existingCustomer" name="customerType" value="existing">
-            <label for="existingCustomer">Nuvarande kund</label>
+                <br><br>
 
-            <br><br>
+                <!-- Phone Input -->
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefon" required>
 
-            <!-- Subject Input -->
-            <label for="subject">Ämne:</label>
-            <input type="text" id="subject" name="subject" placeholder="Ämne" style="width: 250px;" required>
+                <br><br>
 
-            <br><br>
+                <!-- Customer Type Radio Buttons -->
+                <label>Är du:</label>
+                <input type="radio" id="newCustomer" name="customerType" value="new">
+                <label for="newCustomer">Blivande kund</label>
+                <input type="radio" id="existingCustomer" name="customerType" value="existing">
+                <label for="existingCustomer">Nuvarande kund</label>
 
-            <!-- Message Textarea -->
-            <label for="message">Meddelande:</label>
-            <textarea id="message" name="message" cols="60" rows="10" placeholder="Meddelande" required></textarea>
+                <br><br>
 
-            <br><br>
+                <!-- Subject Input -->
+                <label for="subject">Ämne:</label>
+                <input type="text" id="subject" name="subject" placeholder="Ämne" style="width: 250px;" required>
 
-            <!-- Submit Button -->
-            <input type="submit" value="Skicka">
+                <br><br>
+
+                <!-- Message Textarea -->
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" cols="60" rows="10" placeholder="Meddelande" required></textarea>
+
+                <br><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Skicka">
             </fieldset>
         </form>
-        </main>
+    </main>
 
-        <!-- Footer Section -->
-        <footer>
+    <!-- Footer Section -->
+    <footer>
         <p>&copy; 2024 Min Webbutik. Alla rättigheter förbehållna.</p>
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>

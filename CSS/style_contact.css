@@ -1,0 +1,148 @@
+/* style_contact.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  background-color: #AFEEEE;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #AFEEEE;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #6A5ACD;
+}
+
+h1 {
+  font-family: "Roboto", "Roboto-Regular", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+}
+
+/* Rubrik och beskrivande text styling */
+#call-me {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#call-me h2 {
+  color: #333;
+}
+
+#call-me p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#call-me h3 {
+  color: #333;
+  margin-top: 10px;
+}
+
+#call-me a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#call-me a:hover {
+  text-decoration: underline;
+}
+
+/* Kontaktformulär styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 3px solid #ccc;
+  padding: 5%;
+  border-radius: 10px;
+  margin-left: 0%;
+}
+
+legend {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #004080;
+}
+
+/* Footer styling */
+footer {
+  background-color: #AFEEEE;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 75%;
+  transform: translateX(15%);
+}
